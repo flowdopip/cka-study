@@ -1,15 +1,15 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: exame-pod
+  name: logger
 spec:
   containers:
     - name: myfrontend
-      image: nginx
+      image: nginx:alpine
       volumeMounts:
-      - mountPath: "/var/www/html"
+      - mountPath: "/var/www/nginx"
         name: mypd
   volumes:
     - name: mypd
       persistentVolumeClaim:
-        claimName: exame-pvc
+        claimName: log-claim

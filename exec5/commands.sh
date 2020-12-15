@@ -1,0 +1,1 @@
+kubectl label nodes controlplane disktype=ssd

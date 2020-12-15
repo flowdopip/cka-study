@@ -1,0 +1,1 @@
+kubectl exec webapp-color -- nc -z -w 1 secure-service 80

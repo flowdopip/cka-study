@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: exame-pv
+  name: log-volume
   labels:
     type: local
 spec:
-  storageClassName: default
+  storageClassName: manual
   capacity:
     storage: 1Gi
   accessModes:
